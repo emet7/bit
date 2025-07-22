@@ -73,3 +73,23 @@ Certainly! Here’s a list of some of the most important court cases related to 
 | Johnson v. California  | 2005  | No racial segregation in housing assignments   |
 
 If you’d like more detail on any case or additional cases (such as those relating to religious rights or female inmates), just let me know!
+Bit heartbeat at 2025-07-22 18:55:03.232302
+Sure! Here are the assumptions for t-tests (specifically for independent and paired t-tests):
+
+**For Independent t-tests (comparing means of two independent groups):**
+1. **Independence:** The samples are independent (no participant is in both groups).
+2. **Normality:** The data in each group are approximately normally distributed, especially important for small sample sizes (<30 per group). For larger samples, the Central Limit Theorem lessens this requirement.
+3. **Homogeneity of Variances:** The variances of the two groups are assumed to be equal (homoscedasticity). This can be tested with Levene’s Test or similar.
+
+**For Paired (Dependent) t-tests (comparing means of two related groups, e.g., before-and-after measurements):**
+1. **Dependence within pairs:** The data are paired/matched, NOT independent.
+2. **Normality of Differences:** The differences between the paired observations should be approximately normally distributed.
+
+**General Assumptions:**
+- The dependent variable should be measured at an interval or ratio scale (i.e., continuous).
+
+**If assumptions are violated:**
+- For non-normality: Consider using non-parametric alternatives (e.g., Mann-Whitney U for independent samples, Wilcoxon signed-rank test for paired samples).
+- For unequal variances (independent t-test): Use Welch's t-test.
+
+Let me know if you need more details on one specific type of t-test or the rationale behind these assumptions!
