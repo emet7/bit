@@ -68,3 +68,24 @@ def estimate_gpt41_cost(input_text, output_text, input_rate=0.005, output_rate=0
 
     cost = (input_tokens / 1000) * input_rate + (output_tokens / 1000) * output_rate
     return cost
+
+import requests
+
+def get_nyc_mta_data(endpoint, api_key, params=None):
+    """
+    Connects to the NYC MTA API and returns the JSON response.
+    
+    Args:
+        endpoint (str): The specific API endpoint URL.
+        api_key (str): Your MTA API key.
+        params (dict, optional): Additional parameters for the API request.
+    
+    Returns:
+        dict: The JSON response from the MTA API.
+    """
+    headers = {
+        'x-api-key': api_key
+    }
+    response = requests.get(endpoint, headers=headers, params=params)
+    response.raise_for_status()
+    return response.json()
