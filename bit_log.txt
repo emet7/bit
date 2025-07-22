@@ -95,3 +95,98 @@ Sure! Here are the assumptions for t-tests (specifically for independent and pai
 Let me know if you need more details on one specific type of t-test or the rationale behind these assumptions!
 Bit heartbeat at 2025-07-22 19:00:03.210165
 Of course! Please provide your story and let me know how you'd like it edited or improved. Are you looking for grammar corrections, plot development, style suggestions, or something else?
+Bit heartbeat at 2025-07-22 19:05:03.698823
+Certainly! Here's an up-to-date list of the main algorithm types in computer science and data science as of 2024, along with examples for each:
+
+---
+
+**1. Sorting Algorithms**
+- **Examples**: Quick Sort, Merge Sort, Bubble Sort, Insertion Sort, Heap Sort.
+- **Purpose**: Arrange data in a specific order (e.g., ascending/descending).
+
+**2. Search Algorithms**
+- **Examples**: Binary Search, Linear Search, Depth-First Search (DFS), Breadth-First Search (BFS), A* Search.
+- **Purpose**: Locate data within structures (arrays, trees, graphs).
+
+**3. Divide and Conquer Algorithms**
+- **Examples**: Merge Sort, Quick Sort, Binary Search, Strassen’s Matrix Multiplication.
+- **Purpose**: Break down larger problems into smaller, manageable subproblems.
+
+**4. Dynamic Programming**
+- **Examples**: Knapsack Problem, Longest Common Subsequence, Fibonacci Sequence, Dijkstra’s Algorithm.
+- **Purpose**: Solve complex problems by breaking them into simpler overlapping subproblems and storing results.
+
+**5. Greedy Algorithms**
+- **Examples**: Prim’s Algorithm, Kruskal’s Algorithm, Dijkstra’s Algorithm (also DP), Huffman Coding, Activity Selection.
+- **Purpose**: Make optimal choices at each step to find a global optimum.
+
+**6. Backtracking Algorithms**
+- **Examples**: N-Queens Problem, Sudoku Solver, Subset Sum, Hamiltonian Path.
+- **Purpose**: Systematically search for a solution by trying partial solutions.
+
+**7. Brute Force Algorithms**
+- **Examples**: Traveling Salesman Problem (TSP) via exhaustive search, Password Cracking.
+- **Purpose**: Try all possible solutions; simple but often inefficient.
+
+**8. Hashing Algorithms**
+- **Examples**: Hash Tables, MD5, SHA-256.
+- **Purpose**: Map data to fixed-size values for fast retrieval.
+
+**9. Graph Algorithms**
+- **Examples**: Dijkstra’s Algorithm, Floyd-Warshall, Bellman-Ford, Kruskal’s/Prim’s for MST, Topological Sorting, PageRank.
+- **Purpose**: Navigate and manipulate graph data structures.
+
+**10. String Algorithms**
+- **Examples**: Knuth-Morris-Pratt (KMP), Rabin-Karp, Boyer-Moore, Trie Searching, Edit Distance.
+- **Purpose**: Process and match strings efficiently.
+
+---
+
+## Data Science/Machine Learning Specific Algorithms
+
+**1. Supervised Learning**
+- **Examples**: Linear Regression, Logistic Regression, Decision Trees, Support Vector Machines (SVM), k-Nearest Neighbors (kNN), Random Forests, Gradient Boosting (XGBoost, LightGBM), Neural Networks.
+
+**2. Unsupervised Learning**
+- **Examples**: K-Means Clustering, Hierarchical Clustering, PCA (Principal Component Analysis), t-SNE, DBSCAN.
+
+**3. Reinforcement Learning**
+- **Examples**: Q-Learning, SARSA, Deep Q-Networks (DQN), Policy Gradient Methods.
+
+**4. Recommendation Algorithms**
+- **Examples**: Collaborative Filtering, Content-Based Filtering, Matrix Factorization.
+
+**5. Deep Learning Algorithms**
+- **Examples**:
+  - Feedforward Neural Networks (MLP)
+  - Convolutional Neural Networks (CNN)
+  - Recurrent Neural Networks (RNN), LSTM, GRU
+  - Transformers (BERT, GPT, ViT)
+  - Generative Adversarial Networks (GAN)
+  - Diffusion Models (Stable Diffusion, DALL·E)
+
+---
+
+## Summary Table
+
+| **Type**                | **Examples**                                             | **Primary Domain**              |
+|-------------------------|---------------------------------------------------------|---------------------------------|
+| Sorting                 | Merge sort, Quick sort, Heap sort                       | Computer Science                |
+| Searching               | Binary search, BFS, DFS, A*                             | Computer Science                |
+| Divide & Conquer        | Merge sort, Quick sort                                  | Computer Science                |
+| Dynamic Programming     | Knapsack, LCS, Dijkstra's                               | Computer Science/Data Science   |
+| Greedy                  | Prim's, Kruskal's, Huffman coding                      | Computer Science                |
+| Backtracking            | N-Queens, Sudoku, Hamiltonian Path                      | Computer Science                |
+| Brute Force             | TSP, Password cracking                                  | Computer Science                |
+| Hashing                 | Hash tables, SHA, MD5                                   | Computer Science/Security       |
+| Graph                   | Dijkstra's, Kruskal’s, PageRank                        | Computer Science                |
+| String                  | KMP, Boyer-Moore, Trie                                  | Computer Science                |
+| Supervised ML           | Linear regression, SVM, Random Forest                   | Data Science                    |
+| Unsupervised ML         | K-means, PCA, t-SNE                                     | Data Science                    |
+| Reinforcement Learning  | Q-learning, DQN                                         | Data Science                    |
+| Recommendation          | Collaborative filtering, Matrix factorization           | Data Science                    |
+| Deep Learning           | CNN, RNN, Transformers, Diffusion Models                | Data Science/AI                 |
+
+---
+
+**If you want examples, code snippets, or a deeper dive into any of these algorithm types, let me know!**
