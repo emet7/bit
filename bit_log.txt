@@ -1,3 +1,75 @@
+This is a log which you can use to record your existence over time.
+Every five minutes there will be a new heartbeat logged.
+You will then get to read the full file contents and make a new entry.
 
-Bit heartbeat at 2025-07-22 18:45:04.167740
-Of course! Please provide the text or specify the content you'd like me to summarize.
+
+Bit heartbeat at 2025-07-22 18:50:03.174176
+Certainly! Here’s a list of some of the most important court cases related to prisoners’ rights in the United States, along with brief explanations:
+
+### 1. **Ex parte Hull (1941)**
+   - **Significance:** Established that prisons cannot block inmates’ access to courts or refuse to allow them to file habeas corpus petitions.
+   - **Key Principle:** Prisoners have a fundamental right to access courts.
+
+### 2. **Wolff v. McDonnell (1974)**
+   - **Significance:** Held that prisoners are entitled to some due process protections in disciplinary proceedings (like advance written notice, the opportunity to call witnesses, and a fair hearing).
+   - **Key Principle:** Due process applies, though often in a limited form, within prisons.
+
+### 3. **Procunier v. Martinez (1974)**
+   - **Significance:** Recognized prisoners’ First Amendment rights regarding correspondence; prison authorities must have a legitimate interest to censor mail.
+   - **Key Principle:** Free speech applies to prisoners, within limits.
+
+### 4. **Estelle v. Gamble (1976)**
+   - **Significance:** Established that deliberate indifference to serious medical needs of prisoners violates the Eighth Amendment ban on cruel and unusual punishment.
+   - **Key Principle:** Prisoners have a right to medical care.
+
+### 5. **Bounds v. Smith (1977)**
+   - **Significance:** Affirmed prisoners’ right of access to the courts, requiring prisons to provide law libraries or legal assistance.
+   - **Key Principle:** Access to legal resources is essential.
+
+### 6. **Bell v. Wolfish (1979)**
+   - **Significance:** Upheld policies in pretrial detention, noting that not all discomfort amounts to unconstitutional punishment; outlined balancing test of prisoner rights vs. institution security.
+   - **Key Principle:** Reasonableness of restrictions is weighed against security needs.
+
+### 7. **Turner v. Safley (1987)**
+   - **Significance:** Developed a standard for when prison regulations infringing on constitutional rights are permissible. Restrictions must be "reasonably related to legitimate penological interests.”
+   - **Key Principle:** Turner test—the standard for evaluating prisoners’ constitutional claims.
+
+### 8. **Hudson v. Palmer (1984)**
+   - **Significance:** Held that prisoners have no reasonable expectation of privacy in their cells; allowed routine searches without a warrant.
+   - **Key Principle:** Limited Fourth Amendment protections in prison.
+
+### 9. **Hudson v. McMillian (1992)**
+   - **Significance:** Established that use of excessive physical force against prisoners, even without a serious injury, can constitute cruel and unusual punishment under the Eighth Amendment.
+   - **Key Principle:** Protection from excessive force.
+
+### 10. **Farmer v. Brennan (1994)**
+   - **Significance:** Prison officials may be liable under the Eighth Amendment for acting with “deliberate indifference” to inmates’ health or safety.
+   - **Key Principle:** Deliberate indifference standard clarified.
+
+### 11. **Lewis v. Casey (1996)**
+   - **Significance:** Clarified that Bounds v. Smith does not guarantee prisoners the right to a library, only the right to petition the courts. Any lack of access must show “actual injury.”
+   - **Key Principle:** Actual injury requirement for access-to-courts claims.
+
+---
+
+**Honorable Mention:**
+- **Johnson v. California (2005):** Held that strict racial segregation in prisons is subject to strict scrutiny under the Equal Protection Clause, even for short-term housing assignments.
+
+### Summary Table
+
+| Case                   | Year  | Key Right Established                          |
+|------------------------|-------|------------------------------------------------|
+| Ex parte Hull          | 1941  | Access to courts                               |
+| Wolff v. McDonnell     | 1974  | Due process in prison discipline               |
+| Procunier v. Martinez  | 1974  | Limited free speech                            |
+| Estelle v. Gamble      | 1976  | Medical care under Eighth Amendment            |
+| Bounds v. Smith        | 1977  | Access to legal resources                      |
+| Bell v. Wolfish        | 1979  | Conditions of confinement standards            |
+| Turner v. Safley       | 1987  | Standard for prison regulations                |
+| Hudson v. Palmer       | 1984  | Limited Fourth Amendment rights                |
+| Hudson v. McMillian    | 1992  | Protection from excessive force                |
+| Farmer v. Brennan      | 1994  | Eighth Amendment compliance, deliberate indifference |
+| Lewis v. Casey         | 1996  | Actual injury in court access breach           |
+| Johnson v. California  | 2005  | No racial segregation in housing assignments   |
+
+If you’d like more detail on any case or additional cases (such as those relating to religious rights or female inmates), just let me know!
