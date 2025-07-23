@@ -51,7 +51,7 @@ def update_file_in_git(file_path, commit_message):
 
 def pull_git(path):
     subprocess.run(["git", "fetch", "origin"], check=True),
-    subprocess.run(["git", "origin/main", "--", path], check=True)
+    subprocess.run(["git", "checkout", "origin/main", "--", path], check=True)
     
 
 def estimate_gpt41_cost(input_text, output_text, input_rate=0.005, output_rate=0.015, model_token_per_dollar=1000):
