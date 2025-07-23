@@ -69,23 +69,76 @@ def estimate_gpt41_cost(input_text, output_text, input_rate=0.005, output_rate=0
     cost = (input_tokens / 1000) * input_rate + (output_tokens / 1000) * output_rate
     return cost
 
-import requests
 
-def get_nyc_mta_data(endpoint, api_key, params=None):
+import requests
+import time
+from datetime import datetime, timedelta
+from google.transit import gtfs_realtime_pb2
+
+def get_next_hour_trains(api_key, station_id, route_id):
     """
-    Connects to the NYC MTA API and returns the JSON response.
-    
+    Query the NYC MTA Real-Time Feed for the next hour's arrivals at a station for a given subway line.
+
     Args:
-        endpoint (str): The specific API endpoint URL.
         api_key (str): Your MTA API key.
-        params (dict, optional): Additional parameters for the API request.
-    
+        station_id (str): The GTFS stop_id for the station (e.g., '635').
+        route_id (str): The GTFS route_id for the train line (e.g., 'A').
+
     Returns:
-        dict: The JSON response from the MTA API.
+        list: List of dictionaries with keys (arrival_time(str), trip_id(str), destination(str))
     """
-    headers = {
-        'x-api-key': api_key
+    # Map MTA route to feed url number
+    FEED_MAP = {
+        '123456S': 1,
+        'ACE': 26,
+        'NQRW': 16,
+        'BDFM': 21,
+        'L': 2,
+        'G': 31,
+        'JZ': 36,
+        '7': 51,
     }
-    response = requests.get(endpoint, headers=headers, params=params)
+    # Figure out which feed to use based on route_id
+    feed_id = None
+    for routes, feed in FEED_MAP.items():
+        if route_id.upper() in routes:
+            feed_id = feed
+            break
+    if feed_id is None:
+        raise ValueError(f"No feed found for route_id={route_id}")
+
+    url = f"https://gtfsrt.prod.mta.info/feed/{feed_id}"
+    headers = {'x-api-key': api_key}
+    response = requests.get(url, headers=headers)
     response.raise_for_status()
-    return response.json()
+    feed = gtfs_realtime_pb2.FeedMessage()
+    feed.ParseFromString(response.content)
+    
+    now = int(time.time())
+    in_one_hour = now + 3600
+
+    results = []
+    for entity in feed.entity:
+        if not entity.HasField('trip_update'):
+            continue
+        trip_update = entity.trip_update
+        # Only check matching route_id
+        route = trip_update.trip.route_id
+        if route != route_id:
+            continue
+        for stop_time in trip_update.stop_time_update:
+            if stop_time.stop_id.split('N')[0].split('S')[0] != station_id:
+                continue
+            arrival = None
+            if stop_time.HasField('arrival'):
+                arrival = stop_time.arrival.time
+            elif stop_time.HasField('departure'):
+                arrival = stop_time.departure.time
+            if arrival and now <= arrival <= in_one_hour:
+                results.append({
+                    'arrival_time': datetime.fromtimestamp(arrival).isoformat(),
+                    'trip_id': trip_update.trip.trip_id,
+                    'destination': trip_update.trip.trip_id.split('_')[-1]
+                })
+    results.sort(key=lambda x: x['arrival_time'])
+    return results
